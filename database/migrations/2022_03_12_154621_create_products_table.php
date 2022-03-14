@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('slug', 180);
             $table->decimal('price', 5, 2)->default(0)->nullable();
             $table->text('description')->nullable();
+            $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreignId('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
         });
