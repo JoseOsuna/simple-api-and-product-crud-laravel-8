@@ -15,7 +15,7 @@ class AddDataToCartProduct extends Migration
     {
         Schema::table('cart_product', function (Blueprint $table) {
             $table->decimal('quantity')->default(1)->nullable();
-            $table->json('data')->default('[]')->nullable();
+            $table->text('data')->nullable();
         });
     }
 

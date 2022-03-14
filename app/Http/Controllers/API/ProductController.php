@@ -10,6 +10,8 @@ use App\Http\Controllers\Controller;
 
 class ProductController extends Controller
 {
+    
+
     /**
      * Display a listing of the resource.
      *
@@ -25,7 +27,7 @@ class ProductController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return App\Models\Shop\Product
      */
     public function store(Request $request)
     {
